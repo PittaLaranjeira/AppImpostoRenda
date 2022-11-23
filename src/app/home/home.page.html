@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      APP - IMPOSTO DE RENDA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <form #formulario="ngForm">
+    <br><br><br>
+    <ion-item>
+      <ion-label>Salário: </ion-label>
+      <ion-input name="sal" ngModel></ion-input>
+    </ion-item><br><br>
+
+    <ion-button (click)="calcir(formulario)">Calcular IR</ion-button>
+    
+    <br><br>
+    <ion-item>
+      <ion-label>Valor a recolher: </ion-label>
+      <ion-input disabled value="{{resultado}}"></ion-input>
+    </ion-item>
+  </form>
+</ion-content>
+
