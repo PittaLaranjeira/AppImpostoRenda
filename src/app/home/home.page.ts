@@ -9,11 +9,11 @@ export class HomePage {
 
   constructor() { }
 
-  resultado;
-  txir;
+  resultado = 0;
+  txir = 0;
 
-  calcir(formu) {
-    const sal = formu.value.sal;
+  calcir(form: { value: { sal: any; }; }) {
+    const sal = form.value.sal;
     
     if (sal <= 2000) {
       this.txir = 0;

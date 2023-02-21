@@ -20,7 +20,20 @@
     <ion-item>
       <ion-label>Valor a recolher: </ion-label>
       <ion-input disabled value="{{resultado}}"></ion-input>
+      <ion-label>Taxa IR (%): </ion-label>
+      <ion-input disabled value="{{txir}}"></ion-input>
     </ion-item>
   </form>
+
+  <div><br>
+    <pre>
+        Taxa IR (%)
+        Salários até R$ 2000,00 - ISENTOS
+        Salários entre R$ 2000,00 e R$ 5000,00 - 10 %
+        Salários acima de R$ 5000,00 - 15%
+    </pre>
+  </div>
+
+  
 </ion-content>
 
